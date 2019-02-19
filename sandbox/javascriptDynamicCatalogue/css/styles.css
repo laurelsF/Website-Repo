@@ -1,0 +1,22 @@
+p{	
+	color: black;
+	text-align: center;
+	font-family: monospace;
+	font-size: 150%;
+}
+
+#centreColumn{
+	width: 70%;
+	border: 1px 1px 1px 1px;
+	margin: auto;
+	background-color: black;
+}
+
+#shopItem{
+	margin: auto;
+	width: 70%;
+	background-color: white;
+	border: black;
+	border: solid;
+	border: 1px 1px 1px 1px;
+}
