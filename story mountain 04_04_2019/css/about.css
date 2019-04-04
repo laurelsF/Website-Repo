@@ -1,0 +1,450 @@
+/* universal css */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family: 'Raleway Dots', 'Montserrat', Arial, Helvetica, Sans-Serif;
+color: white;
+line-height: 1.5;
+}
+/*end universal css*/
+/* start section1 */
+/*######## ABOUT #########/
+/*##########intro ##########*/
+.about_intro_wrap {
+  background: linear-gradient(rgba(0,0,0,.5),    rgba(0,0,0,.1)),/*transparent overlay*/ url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/fb04cd73750985.5c1807c27045b.jpg);
+  min-height: 200vh;
+  background-attachment: fixed; /*creates paralax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+#intro_image{
+  display: grid;
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 20% 15vw 12vw 13vw 20vw 20vw;
+  grid-template-rows: 17vw 28% auto;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+#logo{
+  grid-row-start:1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  opacity: .8;
+  width: 40%;
+  margin: 20% 20% ;
+}
+#intro_image .hl{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end:5;
+  height: 1px;
+  align-self: end;
+  margin-left: 4%;
+}
+.title_font{
+  grid-row-start:2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 5rem;
+  text-align: left;
+  margin: 0 50%;
+  letter-spacing: .05em;
+}
+.subtitle_font{
+font-size: 2rem;
+grid-row-start:3;
+grid-row-end: 4;
+grid-column-start:1;
+grid-column-end:5;
+margin: 0 18%;
+letter-spacing: .05em;
+}
+.greenbox {
+  background-color: #4c9da3;
+  grid-row-start:1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  opacity: .125;
+  height: 210%;
+  z-index: 1;
+}
+.greenbox2 {
+  background-color: #4c9da3;
+  grid-row-start:2;
+  grid-column-start: 5;
+  opacity: 0.05;
+  height: 200px;
+}
+/*####### end intro ##########*/
+/*######start gradient wrap#############*/
+#gradient_wrap{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(4,12,12,0.9) 25%, rgba(4,12,12,0.9) 100%);
+  min-height: 100vh;
+}
+/*end gradient_wrap media queries*/
+/*start about_one*/
+.left_img{
+  width: 120%;
+}
+#about_one p{
+  font-size: calc(1rem + .6vw);
+  width: 60%;
+}
+
+#about_one h1{
+  font-size: calc(1.5rem + .6vw);
+}
+
+.border{
+  border: 1px solid grey;
+  padding: 5%;
+}
+/*about1 media queries*/
+@media screen and (min-width: 576px) {
+  #about_one .logo_wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #about_one .logo_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*end about1 media queries*/
+/*end about_one*/
+/* start section2 */
+.wrap_2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/ee6a2073889271.5c18fcd378a4b.jpg);
+  min-height: 200vh;
+  background-attachment: fixed; /*creates paralax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.section_wrap{/*use to wrap if want to add flex to a section */
+  display: flex;/*applies flex to the container - can change to grid if prefer*/
+  flex-direction: column;/* flex property*/
+  align-self: center;
+  padding: 0;
+}
+.quote {
+  line-height: calc(1.8rem + .8vw);
+  margin: 1% 10%;
+  font-size: calc(1.5rem + .6vw);
+}
+
+/* ##### endabout_two ######*/
+/*######## END ABOUT #########/
+
+
+/*######## HARDWARE #########*/
+#hardware_intro_wrap {
+  background: linear-gradient(rgba(0,0,0,.5),    rgba(0,0,0,.1)),/*transparent overlay*/ url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/ec1eda73889271.5c18fcd377edc.jpg);
+  min-height: 200vh;
+  background-attachment: fixed; /*creates paralax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+#hardware_one p{
+  font-size: calc(1rem + .6vw);
+  width: 100%;
+  padding: 5%;
+  text-align: left;
+}
+/*about1 media queries*/
+@media screen and (min-width: 576px) {
+  #hardware_one .logo_wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #hardware_one .logo_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*######## END HARDWARE *#########/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title p{
+  text-align:left;
+  margin:4% 10%;
+  font-size: calc(2rem + .5vw);
+}
+.text {
+  line-height: calc(1.8rem + .8vw);
+  margin: 1% 10%;
+  font-size: calc(2rem + .6vw);
+}
+
+
+/*start testimonial*/
+#testimonial{
+  padding-top: 5%;
+  writing-mode: vertical-rl;
+  font-size: 3.7em;
+}
+
+
+img{
+  /*margin: 0;*/
+  width: 280px;
+  border-radius:1px;
+}
+.card{
+
+  margin: 30%;
+  width: 280px;
+  border-radius:1px;
+  color: white;
+}
+
+/*testimonial media queries*/
+  @media screen and (min-width: 576px) {
+    .testimonials {
+
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 20%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .testimonials {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+/*end testimonial meida queries*/
+/*end testimonial*/
+/*client logos*/
+.logo{
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.fab{
+font-size: 3rem;
+padding: 10% 0;
+color: grey;
+transition: transform 0.5s ease-in, background 0.5s ease, color 0.5s ease;
+}
+.fab:hover {
+  transform: scale(1.5);/*makes fa smaller... if made bigger than one would zoom on fa */
+}
+.logo h4 {
+  margin:  0 15px 0; /*fa heading*/
+  font-size: 20px;
+}
+.logo p {
+  line-height: 1.5em;/*1.5 em - don't need to write ems*/
+  width: 75%;
+  margin: 0 auto; /* centers text */
+}
+/* */
+@media screen and (min-width: 576px) {
+  .logo_wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+  }
+  .logo p {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logo_wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*end client logos*/
+/* end make responsive by grid */
+/* end section2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*horizontal line*/
+.hl {
+  margin-top: 10%;
+  width: 30%;
+  border: 1px solid white;
+  transition: width 4s ease, border 4s ease;
+}
+.hl:hover {
+  width: 50%;
+  border: 1px dotted #86CFDE;
+}
+/*end horizontal line*/
+/*scroll line*/
+.center{
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+padding: 8%;
+}
+.center .circle{
+  font-size: calc(2rem + 1vw);
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  padding: calc(.4em + 1vw);
+
+}
+.center .vl{/*vertical line*/
+  width: 1px;
+  height: 210px;
+  background-color: white;
+  align-self: center;
+}
+/*scroll line*/
+
+
+
+
+
+
+/*nav*/
+.nav {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.navlinks {
+  position: fixed;
+  width: 0%;/*hides nav*/
+  overflow-x: hidden;/*hides nav*/
+  height: 100vh;
+  z-index: 2;/*mountain is 1 so is not hidden by blue color block*/
+  background: linear-gradient(rgba(117,33,18,.6), rgba(117,33,18,.2)),/*transparent overlay*/url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/0e565a69755841.5b8cf274b3b77.jpg) ;
+  transition: .3s;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr  1fr  1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:  10% 1fr 1fr 1fr 1fr ;
+}
+.navlinks a {
+  letter-spacing: .2em;
+  color: #fff;
+  font-size: calc(1.2rem + 2.2vw);
+  font-weight: bolder;
+  text-decoration: none;
+  transtion: .3s;
+  display: block;
+}
+.nav a:not(:first-child):hover { /* not the X */
+  background: rgba(117, 33, 18);
+  padding-left: 20%;
+}
+.open {
+  color: white;
+  font-size:3.5rem;
+  position: fixed;
+  display: block;
+  cursor: pointer;
+  padding: 4% 0 0 90%;
+}
+/* placing links on grid*/
+.close {
+  padding-right: .2em;
+  padding-top: .3em;
+  justify-self: end;
+}
+.navlinks span { /* create space between all numbers and links*/
+  margin-right: 10%;
+}
+#home {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#about {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#experience {
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#corporate {
+  grid-row-start: 5;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#hardware {
+  grid-row-start: 6;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#connect {
+  grid-row-start: 7;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+/* end placing links on grid*/
+/*end nav*/
