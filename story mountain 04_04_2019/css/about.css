@@ -1,4 +1,5 @@
 /* universal css */
+
 *{
   padding: 0;
   margin: 0;
@@ -6,10 +7,16 @@
 }
 
 body{
-font-family: 'Raleway Dots', 'Montserrat', Arial, Helvetica, Sans-Serif;
+font-family: 'Source Sans Pro','Raleway Dots', 'Montserrat', Arial, Helvetica, Sans-Serif;
 color: white;
 line-height: 1.5;
 }
+.center p{
+  align-self: center;
+  margin-left: 7%;
+  font-size: 1.5em;
+}
+
 /*end universal css*/
 /* start section1 */
 /*######## ABOUT #########/
@@ -86,6 +93,15 @@ letter-spacing: .05em;
   grid-column-start: 5;
   opacity: 0.05;
   height: 200px;
+}
+.long {
+  grid-row-start:1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  opacity: 0.09;
+  height: 650%;
+
 }
 /*####### end intro ##########*/
 /*######start gradient wrap#############*/
@@ -168,7 +184,9 @@ letter-spacing: .05em;
   flex-direction: column;
   flex: 1 0 auto;
 }
-
+#hardware_one article{
+  margin: 8% 0;
+}
 #hardware_one p{
   font-size: calc(1rem + .6vw);
   width: 100%;
@@ -182,7 +200,7 @@ letter-spacing: .05em;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 10%;
+    grid-column-gap: 15%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -192,8 +210,79 @@ letter-spacing: .05em;
 }
 
 /*######## END HARDWARE *#########/
+/*######## START CONNECT *#########*/
+.connect_intro_wrap {
+  background: linear-gradient(rgba(0,0,0,.5),    rgba(0,0,0,.1)),/*transparent overlay*/ url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/ad764873889271.5c18fcd378493.jpg);
+  min-height: 200vh;
+  background-attachment: fixed; /*creates paralax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+
+}
+#form_gradient_wrap{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(4,12,12,0.4) 25%, rgba(4,12,12,0.4) 100%);
+  min-height: 100vh;
+  padding-bottom: 2%;
+}
+
+#connect div{
+  font-size: 2rem;
+  padding-left: 10%;
+
+}
+#connect p{
+  font-size: 3.8rem;
+}
+/*########### form ###########*/
+form{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 2em 2em 6em 2em;
+  width: 100%;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+}
+input{
+  width: 100%;
+  display: block;
+  height: 50px;
+  background: rgba(0,0,0,0.5);
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.5);
+  margin-bottom:5%;
+  padding-left: 5%;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+}
+button{
+  float: right;
+  margin: 5% 0;
+  width: 30%;
+  height: 50px;
+  color: lightgrey;
+  background-color: transparent; background-color: rgb(100, 194, 201, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+/*########### end form ###########*/
+/*######### meet the team #########*/
+/*########### end meet the team ############*/
+.logo_wrap_row{
+  
+}
+.logo_team{
+
+}
 
 
+  /*usefull for moving images off center----transform: translateX(-50%) translateY(-50%);*/
+/*######## END CONNECT *#########*/
 
 
 
