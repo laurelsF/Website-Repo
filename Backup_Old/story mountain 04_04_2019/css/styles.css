@@ -1,0 +1,292 @@
+/* universal css */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family: 'Raleway Dots', 'Montserrat', Arial, Helvetica, Sans-Serif;
+color: white;
+line-height: 1.5;
+}
+/*end universal css*/
+/* start section1 */
+.wrap_1 {
+  background: linear-gradient(rgba(0,0,0,.1),    rgba(0,0,0,.1)),/*transparent overlay*/ url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/c7709273750985.5c1807c26f701.jpg);
+  min-height: 200vh;
+  background-attachment: fixed; /*creates paralax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+#topImage{
+  display: grid;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 15vw 15vw 5vw 15vw 27vw 20vw;
+  grid-template-rows: auto auto auto auto auto;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+#storyMountain{
+  font-size: 4.5rem;
+  text-align: left;
+  margin: 15% 20%;
+  writing-mode: vertical-rl;
+
+}
+.greenbox {
+  background-color: #4c9da3;
+  grid-row-start:1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  opacity: 0.125;
+  height: 210%;
+  z-index: 1;
+}
+#logo{
+  opacity: .5;
+  /*align-self: center;*/
+  width: 100%;
+  padding-top: 30%;
+  margin-left: 40%;
+}
+#gradient_wrap{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(4,12,12,0.9) 25%, rgba(4,12,12,0.9) 100%);
+  min-height: 100vh;
+}
+.content_wrap{/*use to wrap if want to add flex to a section */
+  display: flex;/*applies flex to the container - can change to grid if prefer*/
+  flex-direction: column;/* flex property*/
+  text-align: left;
+  padding: 10% 0;
+}
+.hl {/*horizontal line */
+  margin-top: 10%;
+  width: 30%;
+  border: 1px solid white;
+  transition: width 4s ease, border 4s ease;
+}
+.hl:hover {
+  width: 50%;
+  border: 1px dotted #86CFDE;
+}
+.title p{
+  text-align:left;
+  margin:4% 10%;
+  font-family: 'Raleway Dots';
+  font-size: calc(2rem + .5vw);
+}
+.text {
+  line-height: calc(1.8rem + .8vw);
+  margin: 1% 20%;
+  font-size: calc(1rem + .6vw);
+}
+/* end section1 */
+
+/* start section2 */
+.wrap_2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/36c52c69312157.5b7c9c3c9109f.jpg);
+  min-height: 200vh;
+  background-attachment: fixed; /*creates paralax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+/*start testimonial*/
+#testimonial{
+  padding-top: 5%;
+  writing-mode: vertical-rl;
+  font-size: 3.7em;
+}
+.greenbox2 {
+  background-color: #4c9da3;
+  grid-row-start:1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  opacity: 0.125;
+  height: 140%;
+  z-index: 0;
+}
+.testimonials{
+
+}
+img{
+  margin: 30%;
+  width: 280px;
+  border-radius:1px;
+}
+.card{
+
+  margin: 30%;
+  width: 280px;
+  border-radius:1px;
+  color: white;
+}
+
+/*testimonial media queries*/
+  @media screen and (min-width: 576px) {
+    .testimonials {
+
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 20%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .testimonials {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+/*end testimonial meida queries*/
+/*end testimonial*/
+/*client logos*/
+.logo{
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.fab{
+font-size: 3rem;
+padding: 10% 0;
+color: grey;
+transition: transform 0.5s ease-in, background 0.5s ease, color 0.5s ease;
+}
+.fab:hover {
+  transform: scale(1.5);/*makes fa smaller... if made bigger than one would zoom on fa */
+}
+.logo h4 {
+  margin:  0 15px 0; /*fa heading*/
+  font-size: 20px;
+}
+.logo p {
+  line-height: 1.5em;/*1.5 em - don't need to write ems*/
+  width: 75%;
+  margin: 0 auto; /* centers text */
+}
+/* */
+@media screen and (min-width: 576px) {
+  .logo_wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+  }
+  .logo p {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logo_wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*end client logos*/
+/* end make responsive by grid */
+/* end section2 */
+
+
+
+
+
+
+
+
+
+/*nav*/
+.nav {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.navlinks {
+  position: fixed;
+  width: 0%;/*hides nav*/
+  overflow-x: hidden;/*hides nav*/
+  height: 100vh;
+  z-index: 2;/*mountain is 1 so is not hidden by blue color block*/
+    background: linear-gradient(rgba(117,33,18,.6), rgba(117,33,18,.2)),/*transparent overlay*/url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/0e565a69755841.5b8cf274b3b77.jpg) ;
+  transition: .3s;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr  1fr  1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:  10% 1fr 1fr 1fr 1fr ;
+}
+.navlinks a {
+  letter-spacing: .2em;
+  color: #fff;
+  font-size: calc(1.2rem + 2.2vw);
+  font-weight: bolder;
+  text-decoration: none;
+  transtion: .3s;
+  display: block;
+}
+.nav a:not(:first-child):hover { /* not the X */
+  background: rgba(117, 33, 18);
+  padding-left: 20%;
+}
+.open {
+  color: #569f94;
+  font-size: 4rem;
+  position: fixed;
+  display: block;
+  cursor: pointer;
+  padding: 1% 0 0 95%;
+}
+/* placing links on grid*/
+.close {
+  padding-right: .2em;
+  padding-top: .3em;
+  justify-self: end;
+}
+.navlinks span { /* create space between all numbers and links*/
+  margin-right: 10%;
+}
+#home {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#about {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#experience {
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#corporate {
+  grid-row-start: 5;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#hardware {
+  grid-row-start: 6;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+#connect {
+  grid-row-start: 7;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: end;
+}
+/* end placing links on grid*/
+/*end nav*/

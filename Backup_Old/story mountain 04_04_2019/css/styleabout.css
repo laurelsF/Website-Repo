@@ -1,0 +1,113 @@
+*########### corporate ################*/
+
+
+
+
+.top{
+width: 10%;
+color: white;
+display: flex;
+flex-direction: row;
+font-size: 1rem;
+
+
+
+align-self: center;
+
+
+}
+
+
+.circle {
+
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border-radius: 100%;
+  margin:0 auto;
+  border: 1px solid white;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+
+}
+.top1{
+  padding: 2%;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid white;
+  color: white;
+  align-self: center;
+}
+.top1 p{
+
+  font-size: 2rem;
+  text-align: center;
+ }
+.top2{
+  padding: 20%;
+  background-color: transparent;
+  border-radius: 100%;
+  margin-right: 12%;
+  border: 1px solid white;
+}
+.top3{
+  padding: 20%;
+  background-color: transparent;
+  border-radius: 100%;
+  margin-right: 12%;
+  border: 1px solid white;
+}*/
+
+
+
+
+
+
+
+
+.vertical-line {
+  width: 2px;
+  height: 500px;
+  background: white;
+  margin: 20px auto 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+.wrap_corp {
+  background: linear-gradient(rgba(0,0,0,.1),    rgba(0,0,0,.1)),/*transparent overlay*/ url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/98e3b769786951.5b8dca20dd998.jpg);
+  min-height: 200vh;
+  background-attachment: fixed; /*creates paralax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+#corp{
+  font-size: 4rem;
+  text-align: left;
+  margin: 25% 0;
+  writing-mode: vertical-rl;
+}
+
+.noPadding {
+  padding: 0;
+}
+.vl{
+  width: 1px;
+  height: 200px;
+  background-color: white;
+
+}
